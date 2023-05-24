@@ -1,4 +1,6 @@
 <h1>progress-bar works!</h1>
 <div class="content">
-  <div class="partial">30</div>
+  <div class="partial" [style.width.%]="progressPercent">
+    {{ progressPercent }}
+  </div>
 </div>
