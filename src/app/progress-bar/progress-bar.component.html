@@ -1,6 +1,9 @@
-<h1>progress-bar works!</h1>
+<p>Progress bar :</p>
 <div class="content">
-  <div class="partial" [style.width.%]="progressPercent">
+  <div class="partial" [style.width]="progressPercent + '%'">
     {{ progressPercent }}
   </div>
 </div>
+
+<button (click)="subtractProgress()">Subtract</button>
+<button (click)="addProgress()">Add</button>
