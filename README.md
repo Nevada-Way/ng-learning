@@ -1,3 +1,3 @@
-# qpmhol
+Angular learning
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/qpmhol)
+Create a new branch for every learning project
