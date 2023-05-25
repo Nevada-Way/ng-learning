@@ -55,4 +55,12 @@ export class PasswordMakerComponent {
         chosenChars[Math.floor(Math.random() * chosenChars.length)];
     }
   }
+
+  isDisabled() {
+    //If all fields are empty then returns true
+    if (this.myLength > 0) {
+      return !(this.useLetters || this.useNumbers || this.useSymbols);
+    } //Disable if no length input
+    return true;
+  }
 }
