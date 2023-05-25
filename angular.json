@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular.io-example": {
+    "angular.learning": {
       "projectType": "application",
       "schematics": { "@schematics/angular:component": { "style": "scss" } },
       "root": "",
@@ -55,10 +55,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production"
+              "browserTarget": "angular.learning:build:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development"
+              "browserTarget": "angular.learning:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -66,7 +66,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular.io-example:build"
+            "browserTarget": "angular.learning:build"
           }
         },
         "test": {
@@ -84,11 +84,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular.io-example:serve"
+            "devServerTarget": "angular.learning:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular.io-example:serve:production"
+              "devServerTarget": "angular.learning:serve:production"
             }
           }
         }
