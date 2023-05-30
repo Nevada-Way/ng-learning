@@ -15,4 +15,9 @@
 - website link url
 - Text content describing card
 
+The source for the images are these url links:
+https://stackblitz.com/files/nevadaway-ng-learning/github/Nevada-Way/ng-learning/20230529-udm-sg-show-cards/src/assets/1.png -->
+https://stackblitz.com/files/nevadaway-ng-learning/github/Nevada-Way/ng-learning/20230529-udm-sg-show-cards/src/assets/b.png -->
+https://stackblitz.com/files/nevadaway-ng-learning/github/Nevada-Way/ng-learning/20230529-udm-sg-show-cards/src/assets/3.png -->
+
 
