@@ -1,9 +1,15 @@
-<app-card
+<!-- <app-card
   [cardTitle]="'yoyo'"
   [cardImageUrl]="'urrrrr'"
-  [cardWebsite="'gfgf@hjhjh'"
-  [cardDescription="'Lorem ipsum'"
-></app-card>
+  [cardWebsite]="'gfgf@hjhjh'"
+  [cardDescription]="'Lorem ipsum'"
+></app-card> -->
 
-<app-card></app-card>
+<app-card
+  *ngFor="let card of cardsPack"
+  [cardImageUrl]="card.imageUrl"
+  [cardTitle]="card.title"
+  [cardWebsite]="card.websiteUrl"
+  [cardDescription]="card.textContent"
+></app-card>
 <app-card></app-card>

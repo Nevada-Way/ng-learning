@@ -1,9 +1,8 @@
 <div class="card">
   <figure>
-    <img
-      src="https://stackblitz.com/files/nevadaway-ng-learning/github/Nevada-Way/ng-learning/20230529-udm-sg-show-cards/src/assets/b.png"
-      width="200px"
-    />
+    <img [src]="cardImageUrl" width="200px" />
   </figure>
   <div>{{ cardTitle }}</div>
+  <div>{{ cardWebsite }}</div>
+  <div>{{ cardDescription }}</div>
 </div>

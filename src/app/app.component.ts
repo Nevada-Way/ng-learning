@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from './core/services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ngLearning';
+  dataService: DataService;
+  cardsPack: any[];
+  constructor() {
+    this.dataService = inject(DataService);
+    this.cardsPack = this.dataService.getAllCards();
+  }
+
+  ngOnInit() {
+    console.log(this.cardsPack);
+  }
 }
