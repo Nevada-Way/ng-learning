@@ -7,12 +7,8 @@ import { DataService } from './core/services/data.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  dataService: DataService;
-  cardsPack: any[];
-  constructor() {
-    this.dataService = inject(DataService);
-    this.cardsPack = this.dataService.getAllCards();
-  }
+  dataService = inject(DataService);
+  cardsPack = this.dataService.getAllCards();
 
   ngOnInit() {
     console.log(this.cardsPack);
