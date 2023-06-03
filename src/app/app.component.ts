@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ngLearning';
+  customerName = '';
+  transactionDate = '';
+  transactionPayment = '';
+
+  onNameChange(name: string) {
+    this.customerName = name;
+  }
+
+  onDateChange(date: string) {
+    this.transactionDate = date;
+  }
+
+  onPaymentAmountChange(paymentAnount: string) {
+    this.transactionPayment = paymentAnount;
+  }
 }
