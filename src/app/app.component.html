@@ -43,3 +43,19 @@
     >Link to Currency format docs...</a
   >
 </div>
+
+<div>---</div>
+
+<div class="card">
+  <h3>Custom Pipe : Unit Conversion</h3>
+  <label>Enter distance in miles : </label>
+  <input type="text" (input)="onMilesChange($any($event.target).value)" />
+  <p>Converted distance is :</p>
+  <p>KM : {{ convertedMiles | milesToMetric: 'km' }}</p>
+  <p>Meters : {{ convertedMiles | milesToMetric: 'm' }}</p>
+  <a
+    href="https://angular.io/api/common/CurrencyPipe#parameters"
+    target="_blank"
+    >Link to Currency format docs...</a
+  >
+</div>
