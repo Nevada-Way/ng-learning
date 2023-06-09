@@ -20,9 +20,9 @@ Create a new branch for every learning project
 - Currency 
 - Custom Pipe
 
-Json
-KeyValue
-
-Percent
-Slice
+Additional pipes not included here are:
+- Json
+- KeyValue
+- Percent
+- Slice
 
